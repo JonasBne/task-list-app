@@ -1,0 +1,32 @@
+{
+  "name": "task-list-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "description": "task list app",
+  "keywords": [
+    "webpack, to-do, tasks, bootstrap, js, css, html"
+  ],
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.1",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "style-loader": "^2.0.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.2",
+    "bootswatch": "^5.0.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.35.1"
+  }
+}
