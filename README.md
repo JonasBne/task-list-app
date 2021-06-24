@@ -1,19 +1,32 @@
-# About
+## Description
 
-An empty project for front end web development based on webpack
+Task list app developed with html, bootstrap, vanilla js. 
 
-## Usage
+## Installation
 
--   From the project directory enter the following commands:
-
-```
-$ npm i
-$ npm start
+```bash
+$ npm install
 ```
 
-## Technologies used
--   npm
--   webpack
-    - loaders for css, fonts, etc.
-    - plugin for HTML template
-    - webpack-dev-server
+## Running the app
+
+```bash
+# compile project
+$ npm run build
+
+# development mode
+$ npm run start
+```
+
+## Test
+
+```bash
+# unit tests
+$ npm run test
+```
+
+
+## Stay in touch
+
+- Author - Jonas Boone
+
