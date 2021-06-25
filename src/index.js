@@ -1,5 +1,9 @@
-import * as present from "./js/app";
-import "./css/style.css";
+// Import bootstrap
+import 'bootstrap';
+import 'bootswatch/dist/minty/bootstrap.min.css';
+import './css/style.scss';
 
-present.greeting()
+// Import fontawesome icons
+import '@fortawesome/fontawesome-free/css/all.css';
+
 

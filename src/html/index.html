@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Home</title>
-    <meta charset="UTF-8">
-  </head>
+<head>
+	<title>Home</title>
+<meta charset="UTF-8">
+</head>
 
-	<body>
-	<h1>Leeg webpack project</h1>
-	</body>
+<body>
+
+<!--<div class="card container">
+	<div class="card-body row">
+		<div class="col">
+			<h5 class="card-title mb-2 text-success">Task list</h5>
+			<p class="card-subtitle mb-2 text-muted">Welcome to your personal task list! </p>
+		</div>
+	</div>
+	<div class="card-body row">
+			<h6 class="card-title text-info">Add task</h6>
+			<form class="row">
+				<div class="col">
+					<label for="task">
+						<input id="task" class="form-control" type="text" placeholder="Add your task here">
+					</label>
+					<i id="plus" class="fa fa-plus"></i>
+					<i id="delete" class="fa fa-trash"></i>
+				</div>
+			</form>
+	</div>
+	<div class="card-body row">
+		<div class="col">
+			<h6 class="card-title text-info">All tasks</h6>
+			<ul class="list-group">
+				<li class="list-group-item">Lorem ipsum</li>
+			</ul>
+		</div>
+	</div>
+	<button class="btn btn-danger">Erase all</button>
+</div>-->
+
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div id="main" class="card">
+				<div class="card-body">
+					<h5 class="card-title mb-2 text-success">Task list</h5>
+					<p class="card-subtitle mb-2 text-muted">Welcome to your personal task list! </p>
+					<div class="row">
+						<form id="task-form">
+							<label for="task" class="form-label text-info">New Task</label>
+							<input type="text" name="task" id="task" class="form-control">
+							<input type="submit" name="submit" id="submit-task" class="btn btn-primary my-3" value="Add task">
+						</form>
+						<h5 id="task-title" class="card-title mt-3 mb-2 text-success">Tasks</h5>
+							<div class="input-field col s12">
+								<label for="filter" class="form-label text-info">Filter</label>
+								<input type="text" name="filter" id="filter" class="form-control">
+							</div>
+							<ul class="list-group">
+								<li class="list-group-item">Lorem Ipsum</li>
+							</ul>
+							<button id="erase-tasks-btn" class="btn btn-danger mt-2">Erase all</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
 </html>
