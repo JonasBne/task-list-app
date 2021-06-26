@@ -1,13 +1,22 @@
 body {
     margin: 1rem;
-}
 
-form {
-    #check-circle:hover {
-        color: green;
+    #filter {
+        width: 250px;
     }
-    #delete:hover {
-        color: red;
+
+    input {
+        border-radius: 0 !important;
+    }
+
+    ul {
+        padding: 0 !important;
+
+        li {
+            .fa-trash:hover {
+                color: red;
+            }
+        }
     }
 
 }
