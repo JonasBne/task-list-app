@@ -21,8 +21,12 @@ loadAllEventListeners();
 // Event listeners
 
 function loadAllEventListeners() {
-    // Add new task
+    // Add task
     newTaskBtn.addEventListener("click", addNewTask);
+    // Remove task
+    taskList.addEventListener("click", removeTask);
+    // Remove all tasks
+    deleteTasksBtn.addEventListener("click", removeAllTasks);
 }
 
 // Add new task
@@ -50,6 +54,35 @@ function addNewTask(event) {
 
     // Clear input value
     taskInput.value = "";
+
+    // Prevent default behaviour (i.e. no page reloading)
+    event.preventDefault();
+}
+
+// Remove task
+
+function removeTask(event) {
+    // Only remove in case icon was clicked
+    if (event.target.classList.contains("fa-trash")) {
+        // Get parent list item
+        const listItemToRemove = event.target.closest("li");
+        // Remove from DOM with confirmation
+        if (confirm("Are you sure?")) {
+            listItemToRemove.remove();
+        }
+    }
+}
+
+// Remove all tasks
+
+function removeAllTasks(event) {
+    if (confirm("Are you sure?") && taskList.getElementsByTagName("li").length > 0) {
+        while(taskList.firstChild) {
+            taskList.removeChild(taskList.firstChild);
+        }
+    } else {
+        alert("No tasks to remove!")
+    }
 
     // Prevent default behaviour (i.e. no page reloading)
     event.preventDefault();
