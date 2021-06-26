@@ -1,6 +1,7 @@
 ## Description
 
 Task list app developed with html, bootstrap, vanilla js. 
+Data is stored in local storage of the browser.
 
 ## Installation
 
@@ -17,14 +18,6 @@ $ npm run build
 # development mode
 $ npm run start
 ```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-```
-
 
 ## Stay in touch
 
