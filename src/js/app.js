@@ -1,5 +1,10 @@
-// Import UI variables
-import {newTaskBtn, taskList, taskInput, deleteTasksBtn, filter} from "../index";
+// Define UI variables
+
+const taskInput = document.getElementById("task");
+const taskList = document.getElementById("task-list");
+const newTaskBtn = document.getElementById("submit-task-btn");
+const deleteTasksBtn = document.getElementById("delete-tasks-btn");
+const filter = document.getElementById("filter");
 
 // Event listeners
 
